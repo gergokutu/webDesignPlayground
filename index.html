@@ -75,7 +75,7 @@
     $(document).ready(function() {
         // implement font button
         $('input[type=radio][name=fontname]').change(function(e) {
-            console.log(e.target.value);
+            $('#canvas').css('font-family', e.target.value);
         })
     });
   </script>
