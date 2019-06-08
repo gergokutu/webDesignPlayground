@@ -84,7 +84,7 @@
         // hex color code validation???
         // regex » regular expression
         $('#textcolor').change(function(e) {
-            if ($('#textcolor').text === '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$') {
+            if ($('#textcolor') === '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$') {
                 canvas.css('color', e.target.value);
             } else {
                 alert('Incorrect hex color code');
