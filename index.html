@@ -17,8 +17,6 @@
     }
     #canvas {
       border: 1px dashed #000;
-      padding: 10px;
-      font: 16px/18px "times new roman", times, serif;
     }
     #controls {
       display: -webkit-flex;
@@ -74,6 +72,8 @@
   <script>
     $(document).ready(function() {
         const canvas = $('#canvas');
+        // canvas.css('font', '16px/18px', "times new roman", 'times', 'serif');
+        // canvas.css('padding', '10px');
         // implement font button
         $('input[type=radio][name=fontname]').change(function(e) {
             canvas.css('font-family', e.target.value);
