@@ -73,7 +73,10 @@
     </div>
   <script>
     $(document).ready(function() {
-        // Code here will run when the page has loaded.
+        // implement font button
+        $('input[type=radio][name=fontname]').change(function(e) {
+            console.log(e.target.value);
+        })
     });
   </script>
   </body>
