@@ -81,9 +81,21 @@
         $('#textcolor').change(function(e) {
             $('#canvas').css('color', e.target.value);
         })
-        // mplement background-color changing
+        // implement background-color changing
         $('#bgcolor').change(function(e) {
-            $('#canvas').css('color', e.target.value);
+            $('#canvas').css('background-color', e.target.value);
+        })
+        // implement textsize changing
+        $('#textsize').change(function(e) {
+            $('#canvas').css('font-size', e.target.value + 'px');
+        })
+        // implement lineheight changing
+        $('#lineheight').change(function(e) {
+            $('#canvas').css('line-height', e.target.value + 'px');
+        })
+        // implement textpadding changing
+        $('#textpadding').change(function(e) {
+            $('#canvas').css('padding', e.target.value + 'px');
         })
     });
   </script>
