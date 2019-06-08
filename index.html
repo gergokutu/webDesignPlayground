@@ -76,14 +76,15 @@
         const canvas = $('#canvas');
         canvas.css('font', '16px/18px', "times new roman", 'times', 'serif');
         canvas.css('padding', '10px');
-        // implement font button
+        // implement font radio-button
         $('input[type=radio][name=fontname]').change(function(e) {
             canvas.css('font-family', e.target.value);
         })
         // implement color changing
         // hex color code validation???
         // regex » regular expression
-        $('#textcolor').change(function(e) {
+        // keydown not working properly...
+        $('#textcolor').keydown(function(e) {
             if ($('#textcolor') === '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$') {
                 canvas.css('color', e.target.value);
             } else {
