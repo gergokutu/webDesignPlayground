@@ -47,6 +47,8 @@
             <li><label><input type="radio" name="fontname" value="georgia"> Georgia</label></li>
             <li><label><input type="radio" name="fontname" value="times" checked> Times New Roman</label></li>
             <li><label><input type="radio" name="fontname" value="verdana"> Verdana</label></li>
+            <!-- add font "Impact" -->
+            <li><label><input type="radio" name="fontname" value="impact"> Impact</label></li>
           </ul>
         </div>
         <div class="control">
@@ -79,8 +81,14 @@
             canvas.css('font-family', e.target.value);
         })
         // implement color changing
-        $('#textcolor').keydown(function(e) {
-            canvas.css('color', e.target.value);
+        // hex color code validation???
+        // regex » regular expression
+        $('#textcolor').change(function(e) {
+            if ($('#textcolor').text === '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$') {
+                canvas.css('color', e.target.value);
+            } else {
+                alert('Incorrect hex color code');
+            }
         })
         // implement background-color changing
         $('#bgcolor').keydown(function(e) {
