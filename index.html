@@ -77,6 +77,14 @@
         $('input[type=radio][name=fontname]').change(function(e) {
             $('#canvas').css('font-family', e.target.value);
         })
+        // implement color changing
+        $('#textcolor').change(function(e) {
+            $('#canvas').css('color', e.target.value);
+        })
+        // mplement background-color changing
+        $('#bgcolor').change(function(e) {
+            $('#canvas').css('color', e.target.value);
+        })
     });
   </script>
   </body>
