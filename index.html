@@ -58,10 +58,17 @@
         </div>
         <div class="control">
           <h2>Spacing</h2>
-          <p>Text size: <input id="textsize" type="text" name="textsize" value="16" size="5"></p>
+          <!-- Implement slider with type="range" -->
+          <p>Text size: <input id="textsize" type="range" name="textsize" value="16" size="5"></p>
           <p>Line height: <input id="lineheight" type="text" name="lineheight" value="18" size="5"></p>
           <p>Padding: <input id="textpadding" type="text" name="textpadding" value="10" size="5"></p>
-  
+        </div>
+        <!-- Create extra controls, make it interactive with js -->
+        <div class="control">
+          <h2>Extra controls</h2>
+          <p>Text-decoration: <input type="checkbox" name="text-decoration" value="underline"></p>
+          <p>Font-variant: <input type="checkbox" name="text-decoration" value="small-caps"></p>
+          <p>Font-weight: <input type="checkbox" name="text-decoration" value="bold"></p>
         </div>
       </div>
       </form>
@@ -69,7 +76,7 @@
       <div id="canvas">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-  
+      <!-- For example, make an "export CSS" button that displays the current preferences as properly formatted CSS, at the bottom of the page. -->
     </div>
   <script>
     $(document).ready(function() {
